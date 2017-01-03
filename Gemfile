@@ -4,6 +4,7 @@ group :test do
   gem "rake", ENV['RAKE_GEM_VERSION'] || '~> 12.0.0'
   gem "puppet", ENV['PUPPET_GEM_VERSION'] || '~> 3.8.7'
   gem "rainbow", '~> 2.0.0'
+  gem 'unicode-display_width', '~> 0.3.1'
   gem "rspec", '~> 3.4.0'
   gem "rspec-puppet", :git => 'https://github.com/rodjek/rspec-puppet.git'
   gem "puppetlabs_spec_helper", '>= 1.2.1'
