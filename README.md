@@ -1,5 +1,5 @@
 # datadriven Puppet Module
-[![Build Status](https://travis-ci.org/cammoraton/datadriven.svg)](https://travis-ci.org/cammoraton/datadriven)
+[![Build Status](https://travis-ci.org/cammoraton/puppet-datadriven.svg)](https://travis-ci.org/cammoraton/puppet-datadriven)
 
 #### Table of Contents
 

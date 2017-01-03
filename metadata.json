@@ -1,0 +1,15 @@
+{
+  "name": "cammoraton-datadriven",
+  "version": "0.1.0",
+  "author": "cammoraton",
+  "summary": "General Helper for driving native puppet resources out of hiera",
+  "license": "MIT",
+  "source": "github.com/cammoraton/puppet-datadriven",
+  "project_page": "https://github.com/cammoraton/puppet-datadriven",
+  "issues_url": "https://github.com/cammoraton/puppet-datadriven/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
