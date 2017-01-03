@@ -21,7 +21,6 @@ group :test do
   gem "rspec-puppet", :git => 'https://github.com/rodjek/rspec-puppet.git'
 
   gem "puppetlabs_spec_helper", '>= 1.2.1'
-  gem "metadata-json-lint"
   gem "rspec-puppet-facts"
 
   gem 'puppet-lint', '>= 2.0.0'
