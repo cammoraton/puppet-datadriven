@@ -3,8 +3,9 @@ source "https://rubygems.org"
 group :test do
   # rspec must be v2 for ruby 1.8.7
   if RUBY_VERSION >= '1.8.7' && RUBY_VERSION < '1.9'
-    gem 'rspec', '~> 2.0'
-    gem 'rake',  '~> 10.0'
+    gem 'rspec',     '~> 2.0'
+    gem 'rake',      '~> 10.0'
+    gem 'json_pure', '~>1.8.3'
   else
      # rubocop requires ruby >= 1.9
     gem 'rubocop'
@@ -12,6 +13,8 @@ group :test do
     gem 'rspec',     '~> 3.4.0'
     gem 'simplecov', '>= 0.11.0'
     gem 'simplecov-console'
+
+    gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
   end
 
   gem "puppet", ENV['PUPPET_GEM_VERSION'] || '~> 3.8.7'
@@ -21,7 +24,6 @@ group :test do
   gem "metadata-json-lint"
   gem "rspec-puppet-facts"
 
-  gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
   gem 'puppet-lint', '>= 2.0.0'
   gem "puppet-lint-absolute_classname-check"
   gem "puppet-lint-leading_zero-check"
