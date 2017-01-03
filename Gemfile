@@ -15,6 +15,7 @@ group :test do
     gem 'simplecov-console'
 
     gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
+    gem 'metadata-json-lint"
   end
 
   gem "puppet", ENV['PUPPET_GEM_VERSION'] || '~> 3.8.7'
